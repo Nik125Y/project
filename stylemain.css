@@ -58,3 +58,10 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+div.center{
+ max-width: 500px;
+ background-color: white;
+ margin:auto;
+ margin-top:45px;
+ padding:5px;
+}
