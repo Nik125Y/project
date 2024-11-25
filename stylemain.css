@@ -40,11 +40,11 @@
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #791d0f;} 
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 .nomberru {
   float: right;
   overflow: hidden;
