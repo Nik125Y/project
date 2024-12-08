@@ -264,10 +264,6 @@ source {
   font-size: 25px;
   margin-bottom: 0px;
 }
-.tariff-price {
-  font-size: 50px;
-  font-weight: 700;
-}
 .rub {
   font-size: 20px;
 }
@@ -307,7 +303,7 @@ h2 {
   z-index: 0;
 }
 .fon_tariff1 {
-  background: url(img/D.jpg) no-repeat top right;
+  background: url(foto/D.jpg) no-repeat top right;
   background-size: cover;
 }
 
