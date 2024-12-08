@@ -1129,3 +1129,22 @@ div.center{
 .container {
     padding: 4px 16px;
 }
+.team_button {
+  display: block;
+  background-color: white;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  padding: 5px 20px;
+  font-size: 15px;
+  border-radius: 2px;
+  border-color: gray;
+  margin: auto;
+}
+.team_button:hover {
+  color: #fff;
+  background-color: gray;
+  border-color: gray;
+  font-size: 15px;
+  border-radius: 2px;
+}
