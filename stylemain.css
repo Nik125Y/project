@@ -199,7 +199,6 @@
 }
 
 .block:not(.blockh) {
-/*   max-width: 350px; */
   min-height: 292px;
   min-width: 200px;
 
@@ -209,6 +208,11 @@
   position: relative;
   background-color: #fff;
 }
+ @media (max-width: 900px) {
+  .block:not(.blockh) {
+      min-width: 350px;
+  }
+ }
 .video {
   position: relative;
   overflow: hidden;
