@@ -348,7 +348,7 @@ ol > li {
   margin: 3px;
 }
 ol > li:before {
-  content: url(img/checked.svg);
+  content: url(foto/checked.svg);
   fill: #f69c8f;
   position: absolute;
   top: 0;
@@ -759,7 +759,7 @@ span {
 }
 
 .text-slider:before {
-  content: url(img/right-quote-sign.svg);
+  content: url(foto/right-quote-sign.svg);
   position: absolute;
   top: -10px;
   left: 0;
@@ -789,7 +789,7 @@ span {
 /*footer*/
 .footer {
   padding: 36px 0;
-  background: linear-gradient(254.72deg, rgba(255, 255, 255, 0.276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url(img/D-flying.svg) no-repeat top center, url(img/D-footer.svg) no-repeat bottom right, #040613;
+  background: linear-gradient(254.72deg, rgba(255, 255, 255, 0.276) -114.85%, rgba(255, 255, 255, 0) 69.04%), url(foto/D-flying.svg) no-repeat top center, url(foto/D-footer.svg) no-repeat bottom right, #040613;
   color: #fff;
   font-family: Montserrat;
   border-top: 1px solid #e5e5e5;
@@ -830,7 +830,7 @@ span {
   color: rgba(256, 256, 256, 0.7);
 }
 .nomertel::before {
-  content: url(img/phone.svg);
+  content: url(foto/phone.svg);
   padding-left: 40px;
   position: absolute;
   left: 90px;
@@ -838,7 +838,7 @@ span {
   width: 24px;
 }
 .pochta::before {
-  content: url(img/mail.svg);
+  content: url(foto/mail.svg);
   padding-left: 40px;
   position: absolute;
   left: 90px;
@@ -1054,48 +1054,3 @@ span {
   }
 }
 
-/* .container {
-    padding: 4px 16px;
-}
-.team_button {
-  display: block;
-  background-color: coral;
-  color: #fff;
-  width: 150px;
-  height: 50px;
-  padding: 5px 20px;
-  font-size: 15px;
-  border-radius: 2px;
-  border-color: gray;
-  margin: auto;
-}
-.team_button:hover {
-  color: #fff;
-  background-color: gray;
-  border-color: gray;
-  font-size: 15px;
-  border-radius: 2px;
-}
-@media (max-width: 950px) {
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-  .txts {
-  padding: 10px 5px 5px 10px;
-  
-}
-} */
-/* .slick-list {
-  margin: 0 50px;
-}
-.slick-list img {
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-} */
