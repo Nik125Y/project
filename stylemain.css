@@ -1148,3 +1148,14 @@ div.center{
   font-size: 15px;
   border-radius: 2px;
 }
+@media (max-width: 950px) {
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
