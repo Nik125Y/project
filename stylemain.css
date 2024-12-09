@@ -26,7 +26,9 @@
     text-decoration: none;
     display: block;
 }
-
+img {
+  vertical-align: middle;
+}
 .dropdown-content a:hover {background-color: #791d0f;} 
 
 .dropdown:hover .dropdown-content {display: block;}
