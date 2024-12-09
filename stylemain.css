@@ -727,7 +727,7 @@ span {
   width: 100%;
 }
 .text-slider .row:nth-child(2) {
-  padding-left: 66.5px;
+/*   padding-left: 66.5px; */
   display: flex;
   justify-content: center;
   align-items: center;
