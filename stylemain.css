@@ -786,7 +786,6 @@ span {
 .b22 {
   margin-left: 55px;
 }
-
 /*footer*/
 .footer {
   padding: 36px 0;
@@ -831,7 +830,7 @@ span {
   color: rgba(256, 256, 256, 0.7);
 }
 .nomertel::before {
-  content: url(foto/phone.svg);
+  content: url(img/phone.svg);
   padding-left: 40px;
   position: absolute;
   left: 90px;
@@ -839,7 +838,7 @@ span {
   width: 24px;
 }
 .pochta::before {
-  content: url(foto/mail.svg);
+  content: url(img/mail.svg);
   padding-left: 40px;
   position: absolute;
   left: 90px;
@@ -1055,8 +1054,7 @@ span {
   }
 }
 
-
-.container {
+/* .container {
     padding: 4px 16px;
 }
 .team_button {
@@ -1092,12 +1090,12 @@ span {
   padding: 10px 5px 5px 10px;
   
 }
-}
-.slick-list {
+} */
+/* .slick-list {
   margin: 0 50px;
 }
 .slick-list img {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-}
+} */
