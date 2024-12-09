@@ -1053,4 +1053,8 @@ span {
     width: 1170px;
   }
 }
-
+@media (mфч-width: 982px) {
+ .txts {
+  padding: 10px 10px 5px 5px;
+  }
+}
