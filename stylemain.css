@@ -212,7 +212,7 @@
 }
  @media (max-width: 900px) {
   .block:not(.blockh) {
-      min-width: 460px;
+      min-width: 390px;
   }
  }
 .video {
