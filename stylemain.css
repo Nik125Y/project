@@ -214,6 +214,10 @@
   .block:not(.blockh) {
       min-width: 390px;
   }
+   .header_box {
+  width: max-content;
+}
+
  }
 .video {
   position: relative;
