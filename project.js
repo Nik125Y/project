@@ -121,12 +121,7 @@ $(".b1").on("click", function () {
   else p++;
   aa(p);
 });
-function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6Lf7nZYqAAAAAPtE0lypv_gYVGKL4HVLOR6rP-Ye', {action: 'LOGIN'});
-    });
-  }
+
 /*Footer*/
 
 document.addEventListener("DOMContentLoaded", (event) => {
