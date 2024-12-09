@@ -831,7 +831,7 @@ span {
   color: rgba(256, 256, 256, 0.7);
 }
 .nomertel::before {
-  content: url(img/phone.svg);
+  content: url(foto/phone.svg);
   padding-left: 40px;
   position: absolute;
   left: 90px;
@@ -839,7 +839,7 @@ span {
   width: 24px;
 }
 .pochta::before {
-  content: url(img/mail.svg);
+  content: url(foto/mail.svg);
   padding-left: 40px;
   position: absolute;
   left: 90px;
@@ -1092,4 +1092,12 @@ span {
   padding: 10px 5px 5px 10px;
   
 }
+}
+.slick-list {
+  margin: 0 50px;
+}
+.slick-list img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
