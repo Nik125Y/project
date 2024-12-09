@@ -121,21 +121,21 @@ $(".b1").on("click", function () {
   aa(p);
 });
 /*jslint browser: true*/ /*global  $*/
-// $(document).ready(function () {
-//     $(".carousel").slick({
-//         dots: true,
-//         infinite: true,
-//         responsive: [
-//             {
-//                 breakpoint: 1024,
-//                 settings: {
-//                     slidesToShow: 1
-//                 }
-//             }
-//         ],
-//         slidesToShow: 3
-//     });
-// });
+$(document).ready(function () {
+    $(".carousel").slick({
+        dots: true,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
+        slidesToShow: 3
+    });
+});
 document.addEventListener("DOMContentLoaded", (event) => {
   const recaptcha = document.querySelector(".g-recaptcha");
   recaptcha.setAttribute("data-theme", "dark");
