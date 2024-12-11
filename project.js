@@ -121,7 +121,10 @@ $(".b1").on("click", function () {
   else p++;
   aa(p);
 });
-
+/*capcha*/
+function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
 /*Footer*/
 
 document.addEventListener("DOMContentLoaded", (event) => {
