@@ -1009,6 +1009,9 @@ span {
   .podderjka {
     margin-bottom: 30px;
   }
+  .container2 {
+  max-width: max-content;
+}
 }
 @media (min-width: 768px) {
   .text-content {
