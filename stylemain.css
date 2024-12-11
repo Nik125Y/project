@@ -1068,4 +1068,10 @@ span {
   .button_slide {
     margin: auto;
   }
+  .slaiderpikch{
+  width: auto;
+}
+}
+.slaiderpikch{
+  width: 66%;
 }
