@@ -1061,7 +1061,7 @@ span {
     width: 1170px;
   }
 }
-@media (max-width: 982px) {
+@media (max-width: 952px) {
  .txts {
   padding: 10px 10px 5px 5px;
   }
@@ -1069,7 +1069,7 @@ span {
     margin: auto;
   }
   .slaiderpikch{
-  width: auto;
+  width: 100%;
 }
 }
 .slaiderpikch{
