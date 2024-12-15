@@ -1295,11 +1295,11 @@ footer {
   background: 0 0;
 }
 .imga {
-  width: 66%
+  width: 100%
 }
 @media (max-width: 990px) {
   .imga {
-  width: 100%
+  width: 66%
 }
 }
 
