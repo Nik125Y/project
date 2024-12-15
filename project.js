@@ -1,5 +1,3 @@
-// emailjs.init("service_ty33hw8");
-//  emailjs.send("service_ty33hw8", "template_id", { to_name: "Имя", message: "Привет!", reply_to: "email@example.com" }) .then(response => console.log('Письмо успешно отправлено!', response)) .catch(error => console.log('Возникла ошибка...', error)); 
 window.onload = function () {
   let start = false;
   function slicker() {
