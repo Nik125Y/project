@@ -8,6 +8,7 @@ window.onload = function () {
       $(".autoplay").slick("unslick");
     }
 
+    
     if (vw >= 1000) {
       $(".autoplay").slick({
         arrows: false,
