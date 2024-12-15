@@ -1294,3 +1294,14 @@ footer {
 .form-container .btn:hover {
   background: 0 0;
 }
+.imga {
+  width: 66%
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .imga {
+  
+}
+}
+
+
+
