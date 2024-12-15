@@ -128,23 +128,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const recaptcha = document.querySelector(".g-recaptcha");
   recaptcha.setAttribute("data-theme", "dark");
 });
-//    $('form').on('submit', function(event) {
-//         event.preventDefault();
-//         var $form = $(this);
-//         var $inputs = $form.find('input, button, textarea');
-//         var serializedData = $form.serialize();
+   $('form').on('submit', function(event) {
+        event.preventDefault();
+        var $form = $(this);
+        var $inputs = $form.find('input, button, textarea');
+        var serializedData = $form.serialize();
     
-//         $inputs.prop('disabled', true);
+        $inputs.prop('disabled', true);
     
-//         $.ajax({
-//             url: "https://formcarry.com/s/LjPSAGgHXvd",
-//             type: 'POST',
-//             data: serializedData,
-//             success: function(response) {
-//             },
-//             complete: function() {
-//                 $inputs.prop('disabled', false);
-//             }
-//         });
-//     });
-// })
+        $.ajax({
+            url: "https://formcarry.com/s/LjPSAGgHXvd",
+            type: 'POST',
+            data: serializedData,
+            success: function(response) {
+            },
+            complete: function() {
+                $inputs.prop('disabled', false);
+            }
+        });
+    });
+})
