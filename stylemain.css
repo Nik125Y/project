@@ -208,7 +208,7 @@
 
   border-radius: 4px;
   position: relative;
-  background-color: #fff;
+/*   background-color: #fff; */
 }
  @media (max-width: 900px) {
   .block:not(.blockh) {
