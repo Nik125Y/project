@@ -124,10 +124,10 @@ $(".b1").on("click", function () {
 
 /*Footer*/
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  const recaptcha = document.querySelector(".g-recaptcha");
-  recaptcha.setAttribute("data-theme", "dark");
-});
+// document.addEventListener("DOMContentLoaded", (event) => {
+//   const recaptcha = document.querySelector(".g-recaptcha");
+//   recaptcha.setAttribute("data-theme", "dark");
+// });
    $('form').on('submit', function(event) {
         event.preventDefault();
         var $form = $(this);
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         $inputs.prop('disabled', true);
     
         $.ajax({
-            url: "https://formcarry.com/s/GIBUnfMHYgB",
+            url: "https://formcarry.com/s/LjPSAGgHXvd",
             type: 'POST',
             data: serializedData,
             success: function(response) {
