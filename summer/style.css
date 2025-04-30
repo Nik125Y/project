@@ -1,0 +1,125 @@
+
+  body {  
+     		font-family: sans-serif; 
+		background-color: #f0f0f5; 
+    		} 
+  header {
+      		background-color: #cccde3;
+      		padding: 20px;
+		width: 100%;
+    		}
+	/* nav */
+	nav {
+      		display: flex;
+      		justify-content: space-between;
+      		align-items: center;
+    	}
+  .logo {
+      		font-size: 24px;
+      		font-weight: bold;
+  }
+	  /* promo */
+	.user-controls {
+		display: flex;
+		gap: 10px;
+    	}
+    	.promo {
+		background-color: #e3dce7;
+		padding: 40px;
+		text-align: center;
+    	}
+    	.promo h2 {
+      		margin: 0 0 10px;
+    	}
+    	.promo button {
+		padding: 10px 20px;
+		background-color: #80334d;
+		color: white;
+		border: none;
+		cursor: pointer;
+    	}
+    /* carousel*/
+  .slick-prev, .slick-next {
+  	background: #80334d;
+		border: none;
+		color: white;
+		padding: 10px;
+		border-radius: 50%;
+		position: absolute;
+		top: 40%;
+		transform: translateY(-50%);
+		z-index: 2;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.slick-prev svg, .slick-next svg {
+		width: 20px;
+		height: 20px;
+		fill: white;
+	}
+	.slick-prev {
+	 	left: -30px;
+	}
+	.slick-next {
+	  right: -30px;
+	}
+
+  .container {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 clamp(20px, 5vw, 60px); /* адаптивные отступы от 20px до 60px */
+	}
+
+	.carousel {
+		padding: 20px;
+	}
+
+	.carousel h3 {
+		margin-bottom: 10px;
+	}
+	.slick-slide {
+    padding: 0 10px;
+    	}
+/*     book */
+  .book-cover {
+		width: 100%;
+		height: 300px;
+		background-color: #ccc;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.2rem;
+		color: #666;
+		object-fit: cover;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease;
+  }
+	.book-cover:hover {
+		transform: scale(1.05);
+	}
+	.book-title {
+		font-weight: 600;
+		font-size: 1rem;
+		margin-top: 0.5rem;
+	}
+	.book-price {
+		color: #007bff;
+	}
+   
+    /* footer */
+	.about {
+		background-color: #fff;
+	}
+  footer {
+		background-color: #cccde3;
+		padding-top: 20px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+  }
