@@ -1,4 +1,4 @@
-<script>
+
     $(document).ready(function () {
       $('.book-carousel').slick({
   slidesToShow: 4,
@@ -83,4 +83,4 @@
       $('.book-carousel').slick('slickAdd', bookHtml);
     });
   });
-</script>
+
