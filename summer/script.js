@@ -32,35 +32,35 @@
       title: "Книга 1",
       price: "450 ₽",
       image: "files/bestsellers/1.png",
-      link:  "index.html"
+      link:  "book.html"
     },
     {
       id: 2,
       title: "Книга 2",
       price: "390 ₽",
       image: "files/bestsellers/2.png",
-      link:  "index.html"
+      link:  "book.html"
     },
     {
       id: 3,
       title: "Книга 3",
       price: "520 ₽",
       image: "files/bestsellers/3.png",
-      link:  "index.html"
+      link:  "book.html"
     },
     {
       id: 4,
       title: "Книга 4",
       price: "610 ₽",
       image: "files/bestsellers/4.png",
-      link:  "index.html"
+      link:  "book.html"
     },
     {
       id: 5,
       title: "Книга 5",
       price: "310 ₽",
       image: "files/bestsellers/5.png",
-      link:  "index.html"
+      link:  "book.html"
     }
   ];
 
