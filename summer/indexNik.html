@@ -24,9 +24,75 @@
   />
 
   <style>
-    body {
-      background-color: #f8f9fa;
+    body { 
+     font-family: sans-serif; 
+     margin: 0; -->
+     background-color: #f0f0f5; 
+     } 
+    header {
+      background-color: #cccde3;
+      padding: 20px;
+	   width: 100%;
     }
+	/* nav */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+     .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    /* carousel*/
+    .slick-prev, .slick-next {
+  background: #80334d;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slick-prev svg, .slick-next svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
+}
+
+    .container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 60px); /* адаптивные отступы от 20px до 60px */
+}
+
+    .carousel {
+      padding: 20px;
+    }
+
+    .carousel h3 {
+      margin-bottom: 10px;
+    }
+
+/*     book */
     .book-cover {
       width: 100%;
       height: 300px;
@@ -36,6 +102,13 @@
       justify-content: center;
       font-size: 1.2rem;
       color: #666;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .book-cover:hover {
+      transform: scale(1.05);
     }
     .book-title {
       font-weight: 600;
@@ -48,30 +121,34 @@
     .slick-slide {
       padding: 0 10px;
     }
-    .book-cover {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.book-cover:hover {
-  transform: scale(1.05);
-}
-
+    /* footer */
+ .about {
+      background-color: #fff;
+    }
+    footer {
+      background-color: #cccde3;
+      padding-top: 20px;
+	   width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
   </style>
 </head>
 <body>
 <!-- Шапка -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
-    <!-- Логотип -->
-    <a class="navbar-brand fw-bold" href="#">
-      <img src="https://via.placeholder.com/40x40?text=MB" alt="Moore Books" class="me-2" />
-      Moore Books
-    </a>
+  	<div class="container">	
+  <nav>
+    <div class="logo">
+	<img src="files/header/logo.png" >  
+	logo
+	 </div>
+	
+	<picture>
+  <source srcset="image@2x.png 2x, image@3x.png 3x">
+  <img src="files/header/logo.png" alt="">
+</picture>
+
 
     <!-- Кнопка для мобильного меню -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -92,31 +169,66 @@
 
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Главная</a>
+          <a class="nav-link" href="project/summer/index.html">Главная</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Каталог</a>
+          <a class="nav-link" href="project/summer/index.html">Каталог</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">О нас</a>
+          <a class="nav-link" href="project/summer/index.html">О нас</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-primary ms-3" href="#">Войти</a>
+          <a class="btn btn-primary ms-3" href="project/summer/index.html">Войти</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
+<section class="promo">
+  <h2>Читайте психологическую новинку от Александра Асмолова</h2>
+  <button>Купить</button>
+</section>
   <div class="container my-5">
     <h2 class="mb-4">Популярные книги</h2>
     <div class="book-carousel">
       <!-- Книги будут здесь -->
     </div>
+    <div class="book-carousel">
+      <!-- Книги будут здесь -->
+    </div>
   </div>
+  
 <!-- Футер -->
+  <section class="about">
+<div class="container">	
+  <h3>Книжный магазин «Moore Books»</h3>
+  <p>Moore Books — прототип онлайн-магазина книг с каталогом, в котором представлены новинки, бестселлеры и издания различных жанров. В ассортименте предусмотрены художественная литература, книги по саморазвитию, учебные материалы, детские книги, графические романы, а также товары для творчества и канцелярии.</p>
+  
+ <p>Интерфейс демонстрирует основные пользовательские сценарии: навигация по каталогу, фильтрация, просмотр карточек книг, добавление товаров в корзину, оформление заказа и управление профилем.</p>
+  
+  <p>Проект Moore Books создан исключительно в демонстрационных целях как визуальный и функциональный прототип книжного онлайн-магазина. Он не является реальным торговым сервисом и не осуществляет продажу товаров.</p>
+  </div
+</section>
 <footer class="bg-light text-center text-lg-start mt-5">
-  <div class="container p-4">
+  <div class="container">
+<div class="container-fluid row">	
+  <div class="col-md-2">
+    <div class="logo" style="margin-top: 3.2rem"> <img src="files/footer/logo.png" > </div>
+  </div>
+  <div class="col-md-5" style="margin-top: 10px">
+      <h2>О нас</h2>
+	  <p>Moore Books - книжный магазин с разнообразным ассортиментом для взрослых и детей. В продаже художественная, образовательная, профессиональная и развлекательная литература. Мы обеспечиваем удобный поиск, быструю доставку и надежный сервис.</p>
+	</div>
+	<div class="col-md-5 mt-3 mt-md-2">
+	<h3>Контакты</h3>
+   <div class="container-fluid row"> <div class="logo"> <img src="files/footer/mail.png" > </div> <p style="margin-top: 0.5rem">Email: support@moorebooks.ru</p></div>
+  <div class="container-fluid row"> <div class="logo"> <img src="files/footer/location.png" > </div>  <p style="margin-top: 0.5rem">Адрес: г. Краснодар, Ставропольская 219</p></div>
+  <div class="container-fluid row"> <div class="logo"> <img src="files/footer/phone.png" > </div>  <p style="margin-top: 0.5rem">Телефон: +7 (900) 123-45-67</p></div>
+  </div>
+</div>
+</div>
+
+/*   <div class="container p-4"> 
     <div class="row">
       <!-- О нас -->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -151,7 +263,7 @@
 
   <div class="text-center p-3 bg-dark text-white">
     © 2025 Moore Books. Все права защищены.
-  </div>
+  </div> */
 </footer>
 
   <!-- jQuery -->
@@ -201,36 +313,36 @@
       id: 1,
       title: "Книга 1",
       price: "450 ₽",
-      image: "https://via.placeholder.com/200x300?text=Книга+1",
-      link: "#"
+      image: "project/summer/files/bestsellers/1.png",
+      link:  "project/summer/index.html"
     },
     {
       id: 2,
       title: "Книга 2",
       price: "390 ₽",
-      image: "https://via.placeholder.com/200x300?text=Книга+2",
-      link: "#"
+      image: "project/summer/files/bestsellers/2.png",
+      link:  "project/summer/index.html"
     },
     {
       id: 3,
       title: "Книга 3",
       price: "520 ₽",
-      image: "https://via.placeholder.com/200x300?text=Книга+3",
-      link: "#"
+      image: "project/summer/files/bestsellers/3.png",
+      link:  "project/summer/index.html"
     },
     {
       id: 4,
       title: "Книга 4",
       price: "610 ₽",
-      image: "https://via.placeholder.com/200x300?text=Книга+4",
-      link: "#"
+      image: "project/summer/files/bestsellers/4.png",
+      link:  "project/summer/index.html"
     },
     {
       id: 5,
       title: "Книга 5",
       price: "310 ₽",
-      image: "https://via.placeholder.com/200x300?text=Книга+5",
-      link: "#"
+      image: "project/summer/files/bestsellers/5.png",
+      link:  "project/summer/index.html"
     }
   ];
 
