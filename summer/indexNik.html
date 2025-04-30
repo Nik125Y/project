@@ -80,6 +80,16 @@
 
     <!-- Меню -->
     <div class="collapse navbar-collapse" id="navbarNav">
+      <form class="d-flex me-3" role="search">
+  <input
+    class="form-control rounded-pill px-3"
+    type="search"
+    placeholder="Поиск книг"
+    aria-label="Поиск"
+    style="width: 200px;"
+  />
+</form>
+
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Главная</a>
@@ -161,30 +171,28 @@
   <script>
     $(document).ready(function () {
       $('.book-carousel').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 576,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 3000, // 3 секунды
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: { slidesToShow: 3 }
+    },
+    {
+      breakpoint: 768,
+      settings: { slidesToShow: 2 }
+    },
+    {
+      breakpoint: 576,
+      settings: { slidesToShow: 1 }
+    }
+  ]
+});
+
     });
   
   // Массив книг (в будущем будет приходить с бэкенда)
