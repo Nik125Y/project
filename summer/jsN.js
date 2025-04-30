@@ -5,7 +5,7 @@
       id: 1,
       title: "Книга 1",
       price: "450 ₽",
-      image: "summer/besteller/1.png",
+      image: "summer/files/bestseller/1.png",
       link: "#"
     },
     {
