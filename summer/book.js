@@ -14,7 +14,7 @@ $(document).ready(function () {
   // 1. Получаем ID из URL
   const urlParams = new URLSearchParams(window.location.search);
   const bookId = parseInt(urlParams.get("id"));
-
+  updateCartTotal();
   // 2. Заглушка: массив книг 
   const books = [
     {
