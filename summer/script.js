@@ -32,21 +32,21 @@
       title: "Книга 1",
       price: "450 ₽",
       image: "files/bestsellers/1.png",
-      link:  "book.html"
+      link:  "book.html?id=1"
     },
     {
       id: 2,
       title: "Книга 2",
       price: "390 ₽",
       image: "files/bestsellers/2.png",
-      link:  "book.html"
+      link:  "book.html?id=2"
     },
     {
       id: 3,
       title: "Книга 3",
       price: "520 ₽",
       image: "files/bestsellers/3.png",
-      link:  "book.html"
+      link:  "book.html?id=3"
     },
     {
       id: 4,
