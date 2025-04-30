@@ -67,19 +67,28 @@
   // Добавление книг в карусель
   $(document).ready(function () {
     books.forEach(book => {
-      const bookHtml = `
-        <div>
-          <a href="${book.link}" class="text-decoration-none text-dark">
-            <div class="card border-0">
-              <img src="${book.image}" alt="${book.title}" class="book-cover card-img-top" />
-              <div class="card-body p-2">
-                <div class="book-title">${book.title}</div>
-                <div class="book-price">${book.price}</div>
-              </div>
-            </div>
-          </a>
-        </div>
-      `;
+     const bookHtml = `
+  <div>
+    <div class="card border-0">
+      <img src="${book.image}" alt="${book.title}" class="book-cover card-img-top" />
+      <div class="card-body p-2">
+        <div class="book-title">${book.title}</div>
+        <div class="book-price">${book.price}</div>
+        <button class="btn btn-sm btn-outline-primary mt-2 w-100 buy-btn" data-price="${book.price.replace('₽', '').trim()}">
+          Купить
+        </button>
+      </div>
+    </div>
+  </div>
+`;
+        let cartTotal = 0;
+
+$(document).on('click', '.buy-btn', function () {
+  const price = parseInt($(this).data('price'));
+  cartTotal += price;
+  $('#cart-total').text(cartTotal + ' ₽');
+});
+
       $('.book-carousel').slick('slickAdd', bookHtml);
     });
   });
