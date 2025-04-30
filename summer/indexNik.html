@@ -24,114 +24,110 @@
   />
 
   <style>
-    body { 
-     font-family: sans-serif; 
-     margin: 0; -->
-     background-color: #f0f0f5; 
-     } 
-    header {
-      background-color: #cccde3;
-      padding: 20px;
-	   width: 100%;
-    }
+	  body {  
+     		font-family: sans-serif; 
+		background-color: #f0f0f5; 
+    		} 
+    	header {
+      		background-color: #cccde3;
+      		padding: 20px;
+		width: 100%;
+    		}
 	/* nav */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-     .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+	nav {
+      		display: flex;
+      		justify-content: space-between;
+      		align-items: center;
+    	}
+     	.logo {
+      		font-size: 24px;
+      		font-weight: bold;
+    	}
     /* carousel*/
-    .slick-prev, .slick-next {
-  background: #80334d;
-  border: none;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
+    	.slick-prev, .slick-next {
+  		background: #80334d;
+		border: none;
+		color: white;
+		padding: 10px;
+		border-radius: 50%;
+		position: absolute;
+		top: 40%;
+		transform: translateY(-50%);
+		z-index: 2;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.slick-prev svg, .slick-next svg {
+		width: 20px;
+		height: 20px;
+		fill: white;
+	}
+	.slick-prev {
+	 	left: -30px;
+	}
+	.slick-next {
+	  	right: -30px;
+	}
 
-.slick-prev svg, .slick-next svg {
-  width: 20px;
-  height: 20px;
-  fill: white;
-}
+    	.container {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 clamp(20px, 5vw, 60px); /* адаптивные отступы от 20px до 60px */
+	}
 
-.slick-prev {
-  left: -30px;
-}
+	.carousel {
+		padding: 20px;
+	}
 
-.slick-next {
-  right: -30px;
-}
-
-    .container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 clamp(20px, 5vw, 60px); /* адаптивные отступы от 20px до 60px */
-}
-
-    .carousel {
-      padding: 20px;
-    }
-
-    .carousel h3 {
-      margin-bottom: 10px;
-    }
-
+	.carousel h3 {
+		margin-bottom: 10px;
+	}
+	.slick-slide {
+     		padding: 0 10px;
+    	}
 /*     book */
-    .book-cover {
-      width: 100%;
-      height: 300px;
-      background-color: #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: #666;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .book-cover:hover {
-      transform: scale(1.05);
-    }
-    .book-title {
-      font-weight: 600;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-    .book-price {
-      color: #007bff;
-    }
-    .slick-slide {
-      padding: 0 10px;
-    }
+   	.book-cover {
+		width: 100%;
+		height: 300px;
+		background-color: #ccc;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.2rem;
+		color: #666;
+		object-fit: cover;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease;
+    	}
+	.book-cover:hover {
+		transform: scale(1.05);
+	}
+	.book-title {
+		font-weight: 600;
+		font-size: 1rem;
+		margin-top: 0.5rem;
+	}
+	.book-price {
+		color: #007bff;
+	}
+   
     /* footer */
- .about {
-      background-color: #fff;
-    }
-    footer {
-      background-color: #cccde3;
-      padding-top: 20px;
-	   width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
+	.about {
+		background-color: #fff;
+	}
+    	footer {
+		background-color: #cccde3;
+		padding-top: 20px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+    	}
   </style>
 </head>
 <body>
@@ -169,16 +165,16 @@
 
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="project/summer/index.html">Главная</a>
+          <a class="nav-link" href="/index.html">Главная</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="project/summer/index.html">Каталог</a>
+          <a class="nav-link" href="/index.html">Каталог</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="project/summer/index.html">О нас</a>
+          <a class="nav-link" href="/index.html">О нас</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-primary ms-3" href="project/summer/index.html">Войти</a>
+          <a class="btn btn-primary ms-3" href="/index.html">Войти</a>
         </li>
       </ul>
     </div>
@@ -209,8 +205,9 @@
   <p>Проект Moore Books создан исключительно в демонстрационных целях как визуальный и функциональный прототип книжного онлайн-магазина. Он не является реальным торговым сервисом и не осуществляет продажу товаров.</p>
   </div
 </section>
-<footer class="bg-light text-center text-lg-start mt-5">
-  <div class="container">
+
+<footer>
+<div class="container">
 <div class="container-fluid row">	
   <div class="col-md-2">
     <div class="logo" style="margin-top: 3.2rem"> <img src="files/footer/logo.png" > </div>
@@ -227,45 +224,9 @@
   </div>
 </div>
 </div>
-
-/*   <div class="container p-4"> 
-    <div class="row">
-      <!-- О нас -->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">О нас</h5>
-        <p>
-          Moore Books — ваш надежный источник качественной литературы. Мы предлагаем широкий ассортимент книг для всех возрастов и интересов.
-        </p>
-      </div>
-
-      <!-- Ссылки -->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Ссылки</h5>
-        <ul class="list-unstyled mb-0">
-          <li><a href="#" class="text-dark">Главная</a></li>
-          <li><a href="#" class="text-dark">Каталог</a></li>
-          <li><a href="#" class="text-dark">Контакты</a></li>
-          <li><a href="#" class="text-dark">Помощь</a></li>
-        </ul>
-      </div>
-
-      <!-- Контакты -->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Контакты</h5>
-        <ul class="list-unstyled mb-0">
-          <li><span class="text-dark">Email: info@moorebooks.com</span></li>
-          <li><span class="text-dark">Телефон: +7 (495) 123-45-67</span></li>
-          <li><span class="text-dark">Адрес: г. Москва, ул. Примерная, д. 1</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-center p-3 bg-dark text-white">
-    © 2025 Moore Books. Все права защищены.
-  </div> */
 </footer>
 
+	
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -313,36 +274,36 @@
       id: 1,
       title: "Книга 1",
       price: "450 ₽",
-      image: "project/summer/files/bestsellers/1.png",
-      link:  "project/summer/index.html"
+      image: "files/bestsellers/1.png",
+      link:  "index.html"
     },
     {
       id: 2,
       title: "Книга 2",
       price: "390 ₽",
-      image: "project/summer/files/bestsellers/2.png",
-      link:  "project/summer/index.html"
+      image: "files/bestsellers/2.png",
+      link:  "index.html"
     },
     {
       id: 3,
       title: "Книга 3",
       price: "520 ₽",
-      image: "project/summer/files/bestsellers/3.png",
-      link:  "project/summer/index.html"
+      image: "files/bestsellers/3.png",
+      link:  "index.html"
     },
     {
       id: 4,
       title: "Книга 4",
       price: "610 ₽",
-      image: "project/summer/files/bestsellers/4.png",
-      link:  "project/summer/index.html"
+      image: "files/bestsellers/4.png",
+      link:  "index.html"
     },
     {
       id: 5,
       title: "Книга 5",
       price: "310 ₽",
-      image: "project/summer/files/bestsellers/5.png",
-      link:  "project/summer/index.html"
+      image: "files/bestsellers/5.png",
+      link:  "index.html"
     }
   ];
 
