@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moore Books</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Slick CSS -->
+  <link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+/>
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+/>
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css" />
+	
+</head>
+<body>
+<!-- Шапка -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  	<div class="container">	
+  <nav>
+    <div class="logo">
+	<img src="files/header/logo.png" alt="Moore Books">  
+	
+	 </div>
+	
+
+
+    <!-- Кнопка для мобильного меню -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Меню -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="/index.html" style="color: #007bff;">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalog.html">Каталог</a>
+        </li>
+      </ul>
+
+      <form class="d-flex me-auto position-relative" role="search" style="max-width: 540px;">
+        <input class="form-control rounded-pill px-3" type="search" placeholder="Поиск книг" aria-label="Поиск" style="width: 440px;">
+        <button class="btn btn-search position-absolute end-0 top-0 mt-1 me-2" type="button" style="background: none; border: none; color: #6c4ed9; font-size: 1.2rem;">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item me-3 position-relative d-flex align-items-center">
+          <a class="nav-link d-flex align-items-center" href="basket.html">
+            <i class="bi bi-cart" style="font-size: 1.3rem;"></i>
+            <span id="cart-total" class="ms-2 badge rounded-pill bg-danger" style="font-size: 1rem; position: static; transform: none;">0 ₽</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-0 ms-3" href="auth.html" title="Войти">
+            <img src="files/header/user.png" alt="Войти" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Баннер -->
+<div class="container">
+  <section class="banner">
+    <div class="container">
+      <div class="banner-content">
+        <div class="banner-text">
+          <h2>Читайте новинку</h2>
+          <a href="book.html?id=1" class="banner-button">Купить</a>
+        </div>
+        <div class="banner-image">
+          <img src="files/bestsellers/book_on_banner.png" alt="Психология личности в современном мире">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container my-5">
+  <h2 class="mb-4">Популярные книги</h2>
+  <div class="book-carousel">
+    <!-- Книги будут здесь -->
+  </div>
+  Bestsellers
+  <div class="book-carousel">
+    <!-- Книги будут здесь -->
+  </div>
+</div>
+  
+<!-- Футер -->
+  <footer>
+    <div class="container">
+      <div class="container-fluid row">
+        <div class="col-md-2 d-flex align-items-end">
+          <div class="logo w-100"><img src="files/footer/logo.png" alt="Moore Books"></div>
+        </div>
+        <div class="col-md-5" style="margin-top: 10px">
+          <h2>О нас</h2>
+          <p>Moore Books - книжный магазин с разнообразным ассортиментом для взрослых и детей. В продаже художественная, образовательная, профессиональная и развлекательная литература. Мы обеспечиваем удобный поиск, быструю доставку и надежный сервис.</p>
+        </div>
+        <div class="col-md-5 mt-3 mt-md-2">
+          <h3>Контакты</h3>
+          <div class="contact-row"><img class="footer-icon" src="files/footer/mail.png" alt="Email"><span>Email: support@moorebooks.ru</span></div>
+          <div class="contact-row"><img class="footer-icon" src="files/footer/location.png" alt="Location"><span>Адрес: г. Краснодар, Ставропольская 219</span></div>
+          <div class="contact-row"><img class="footer-icon" src="files/footer/phone.png" alt="Phone"><span>Телефон: +7 (900) 123-45-67</span></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Books Data -->
+  <script src="books-data.js"></script>
+  <!-- Our js -->
+  <script src="script.js"></script>
+
+</body>
+</html>
