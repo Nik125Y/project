@@ -254,7 +254,7 @@ footer .container-fluid {
 	flex-wrap: wrap;
 	align-items: flex-end;
 }
-footer .container-fluid .row k {
+footer .k {
   display: grid;
   align-items: start; /* Выравнивание по верхнему краю */
 }
