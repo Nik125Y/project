@@ -200,11 +200,10 @@ nav {
    
 /* Стили для страницы книги */
 .book-details {
-  background-color: #fff;
   border-radius: 8px;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
-background-color: #f7f7fb; 
+  margin-top: 1.5rem;
+  background-color: #f7f7fb; 
 }
 
 .book-details p {
