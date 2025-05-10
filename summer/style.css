@@ -50,7 +50,7 @@ nav {
 .slick-next {
   width: 40px;
   height: 40px;
-  background: #ff69b4 !important;
+  background: #bfbfdb !important;
   border-radius: 50%;
   z-index: 1;
   transition: background-color 0.3s;
