@@ -63,7 +63,7 @@ nav {
 }
 
 .slick-prev {
-  left: 0;
+ /* left: 0;*/
 }
 
 .slick-next {
