@@ -173,7 +173,7 @@ nav {
 }
 
 .card {
-	
+        box-shadow: var(--bs-box-shadow) !important;
 	display: flex;
 	flex-direction: column;
 	background-color: #f7f7fb;
