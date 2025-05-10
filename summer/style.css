@@ -202,9 +202,9 @@ nav {
 .book-details {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+background-color: #f7f7fb; 
 }
 
 .book-details p {
