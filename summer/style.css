@@ -254,10 +254,6 @@ footer .container-fluid {
 	flex-wrap: wrap;
 	align-items: flex-end;
 }
-k {
-  display: grid;
-  align-items: start; /* Выравнивание по верхнему краю */
-}
 footer .logo {
 	display: flex;
 	align-items: flex-end;
