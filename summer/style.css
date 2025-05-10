@@ -243,7 +243,7 @@ nav {
 	background-color: #fff;
 }
 footer {
-	background: #e7e6f7;
+	background: #bfbfdb;
 	color: #2d2d3a;
 	padding: 2.5rem 0 1.5rem 0;
 	margin-top: 3rem;
@@ -372,7 +372,7 @@ footer .contact-row .footer-icon {
 
 /* --- ШАПКА --- */
 nav.navbar {
-  background: #e7e6f7 !important;
+  background: #bfbfdb !important;
   box-shadow: 0 2px 8px rgba(80, 80, 120, 0.07);
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
