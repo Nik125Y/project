@@ -546,7 +546,7 @@ nav.navbar {
 .navbar-nav .nav-link img[alt="Войти"] {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   object-fit: cover;
  /* background: #f4f3fa;*/
 /*  border: 1.5px solid #d1d1e0;*/
