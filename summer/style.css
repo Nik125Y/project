@@ -104,8 +104,8 @@ nav {
 /* Адаптивность для мобильных устройств */
 @media (max-width: 1200px) {
   .book-carousel {
-    padding: 0 40px;
-    padding-left: 60px;
+           padding-left: 57px;
+        padding-right: 40px;
   }
 }
 
