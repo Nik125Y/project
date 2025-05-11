@@ -10,12 +10,12 @@ $(document).ready(function() {
       $loginForm.hide();
       $registerForm.show();
       $title.text('Регистрация');
-      $toggle.text('Уже есть аккаунт? Войти');
+      $toggle.text('Войти');
     } else {
       $registerForm.hide();
       $loginForm.show();
       $title.text('Вход');
-      $toggle.text('Нет аккаунта? Зарегистрироваться');
+      $toggle.text('Зарегистрироваться');
     }
   });
 }); 
