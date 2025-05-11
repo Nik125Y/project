@@ -342,7 +342,7 @@ footer .contact-row .footer-icon {
 .banner-button {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #007bff;
+  background-color: #ae525f;
   color: white;
   text-decoration: none;
   border-radius: 25px;
@@ -351,7 +351,7 @@ footer .contact-row .footer-icon {
 }
 
 .banner-button:hover {
-  background-color: #0056b3;
+  background-color: #90323f;
   color: white;
 }
 
@@ -418,7 +418,7 @@ nav.navbar {
   transition: background 0.2s;
 }
 .btn-primary:hover, .btn-outline-primary:hover {
-  background: #4d36a8;
+  background: #90323f;
   color: #fff;
 }
 
