@@ -279,6 +279,7 @@ footer h2, footer h3 {
 footer p, footer span {
 	color: #2d2d3a;
 	font-size: 1rem;
+	margin-bottom: 5px;
 }
 footer .contact-row {
 	display: flex;
