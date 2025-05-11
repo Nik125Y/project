@@ -111,8 +111,8 @@ nav {
 
 @media (max-width: 768px) {
   .book-carousel {
-    padding: 0 30px;
-    padding-left: 50px; 
+            padding-left: 47px;
+        padding-right: 30px; 
   }
   
   .slick-prev,
