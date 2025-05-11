@@ -544,8 +544,8 @@ nav.navbar {
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-  background: #f4f3fa;
-  border: 1.5px solid #d1d1e0;
+ /* background: #f4f3fa;*/
+/*  border: 1.5px solid #d1d1e0;*/
   padding: 2px;
   transition: border 0.2s;
 }
