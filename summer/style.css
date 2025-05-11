@@ -466,15 +466,15 @@ nav.navbar {
   border-radius: 1.5rem;
   font-size: 0.98rem;
   font-weight: 500;
-  background: #fff;
+  background: #e0d4d9;
   color: black;
   border: 1.5px solid #d5a5b9;
   margin-top: auto;
   transition: background 0.2s, color 0.2s;
 }
 .btn.buy-btn:hover {
-  background: #e0d4d9;
-  color: #fff;
+  background: #d5a5b9;
+  color: black;
 }
 
 /* --- ФИЛЬТРЫ --- */
