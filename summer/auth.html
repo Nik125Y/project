@@ -45,8 +45,6 @@
   <main class="container my-5" style="max-width: 600px;">
     <div class="card p-4 shadow-sm">
       <h2 id="auth-title" class="mb-4 text-center">Вход</h2>
-	    <p id="welcome-text" class="auth-text">Добро пожаловать в наш сервис</p>
-  <p id="register-text" class="auth-text" style="display:none">Создайте новый аккаунт</p>
       <form id="login-form">
         <div class="mb-3">
           <label for="login-email" class="form-label">Email</label>
@@ -56,6 +54,7 @@
           <label for="login-password" class="form-label">Пароль</label>
           <input type="password" class="form-control" id="login-password" required>
         </div>
+	 <p id="register-text" class="auth-text" style="display:none">Уже есть аккаунт?</p>
         <button type="submit" class="btn btn-primary w-100">Войти</button>
       </form>
       <form id="register-form" style="display: none;">
@@ -78,6 +77,7 @@
         <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
       </form>
       <div class="text-center mt-3"> 
+	 <p id="welcome-text" class="auth-text">Нет аккаунта?</p>
        <a href="#" id="toggle-auth">Зарегистрироваться</a>
       </div>
     </div>
