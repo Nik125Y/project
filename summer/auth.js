@@ -3,6 +3,8 @@ $(document).ready(function() {
   const $registerForm = $('#register-form');
   const $toggle = $('#toggle-auth');
   const $title = $('#auth-title');
+  const $welcomeText = $('#welcome-text');
+  const $registerText = $('#register-text');
 
   $toggle.on('click', function(e) {
     e.preventDefault();
@@ -10,14 +12,16 @@ $(document).ready(function() {
       $loginForm.hide();
       $registerForm.show();
       $title.text('Регистрация');
-      $loginForm.prepend('<p class="form-info">Нет аккаунта?</p>');
       $toggle.text('Войти');
+       $welcomeText.hide();
+      $registerText.show();
     } else {
       $registerForm.hide();
       $loginForm.show();
       $title.text('Вход');
-      $registerForm.prepend('<p class="form-info">Уже есть аккаунт?</p>');
       $toggle.text('Зарегистрироваться');
+       $registerText.hide();
+      $welcomeText.show();
     }
   });
 }); 
