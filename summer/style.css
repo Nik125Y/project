@@ -267,8 +267,9 @@ footer .logo {
 	min-height: 60px;
 }
 footer .logo img {
-	height: 44px;
+	/*height: 44px;*/
 	margin-bottom: 0;
+	    margin-top: 20px;
 }
 footer h2, footer h3 {
 	color: black;
