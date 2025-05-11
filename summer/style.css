@@ -467,13 +467,13 @@ nav.navbar {
   font-size: 0.98rem;
   font-weight: 500;
   background: #fff;
-  color: #6c4ed9;
-  border: 1.5px solid #6c4ed9;
+  color: black;
+  border: 1.5px solid #d5a5b9;
   margin-top: auto;
   transition: background 0.2s, color 0.2s;
 }
 .btn.buy-btn:hover {
-  background: #6c4ed9;
+  background: #e0d4d9;
   color: #fff;
 }
 
