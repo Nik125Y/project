@@ -35,23 +35,21 @@
 <body>
 <!-- Шапка -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  	<div class="container">	
-  <nav>
-    <div class="logo">
-	<img src="files/header/logo.png" alt="Moore Books">  
-	
-	 </div>
-	
+  <div class="container">
+    <!-- Логотип и кнопка мобильного меню -->
+    <div class="d-flex align-items-center">
+      <div class="logo me-3">
+        <img src="files/header/logo.png" alt="Moore Books">  
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
-
-    <!-- Кнопка для мобильного меню -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Меню -->
+    <!-- Основное меню -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-3">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <!-- mx-auto для центрирования -->
         <li class="nav-item">
           <a class="nav-link active" href="/index.html" style="color: #007bff;">Главная</a>
         </li>
@@ -60,14 +58,16 @@
         </li>
       </ul>
 
-      <form class="d-flex me-auto position-relative" role="search" style="max-width: 540px;">
+      <!-- Поисковая строка -->
+      <form class="d-flex mx-auto position-relative" role="search" style="max-width: 540px;">
         <input class="form-control rounded-pill px-3" type="search" placeholder="Поиск книг" aria-label="Поиск" style="width: 440px;">
         <button class="btn btn-search position-absolute end-0 top-0 mt-1 me-2" type="button" style="background: none; border: none; color: #6c4ed9; font-size: 1.2rem;">
           <i class="bi bi-search"></i>
         </button>
       </form>
 
-      <ul class="navbar-nav align-items-center">
+      <!-- Иконки корзины и пользователя -->
+      <ul class="navbar-nav ms-auto align-items-center"> <!-- ms-auto для выравнивания вправо -->
         <li class="nav-item me-3 position-relative d-flex align-items-center">
           <a class="nav-link d-flex align-items-center" href="basket.html">
             <i class="bi bi-cart" style="font-size: 1.3rem;"></i>
@@ -84,6 +84,10 @@
   </div>
 </nav>
 
+
+
+
+	
 <!-- Баннер -->
 <div class="container">
   <section class="banner">
