@@ -250,7 +250,8 @@ nav {
 footer {
 	background: #bfbfdb;
 	color: #2d2d3a;
-	padding: 2.5rem 0 1.5rem 0;
+	/*padding: 2.5rem 0 1.5rem 0;*/
+	    padding-top: 1rem;
 	margin-top: 3rem;
 	font-size: 1rem;
 }
