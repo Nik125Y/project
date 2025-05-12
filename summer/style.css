@@ -554,7 +554,7 @@ nav.navbar {
   transition: border 0.2s;
 }
 .navbar-nav .nav-link img[alt="Войти"]:hover {
-  border: 1.5px solid #6c4ed9;
+ /* border: 1.5px solid #6c4ed9; */
 }
 
 /* --- PROFILE PAGE --- */
