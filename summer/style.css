@@ -297,7 +297,7 @@ footer .contact-row .footer-icon {
 }
 @media (max-width: 992px) {
 	footer .container-fluid { flex-direction: column; align-items: flex-start; }
-	footer .logo { margin-bottom: 1.2rem; }
+	footer .logo { /*margin-bottom: 1.2rem;*/ }
 }
 
 .banner {
