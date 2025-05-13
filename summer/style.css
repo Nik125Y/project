@@ -509,7 +509,7 @@ nav.navbar {
 }
 @media (max-width: 576px) {
   .book-card.card { min-height: 440px; }
-  .navbar .navbar-brand img, footer .logo img { height: 30px; }
+  .navbar .navbar-brand img, footer .logo img { /*height: 30px;*/ }
 }
 
 /* --- КНОПКА ПОИСКА В ШАПКЕ --- */
