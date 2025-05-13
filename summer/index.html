@@ -37,22 +37,20 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
   <div class="container">
     <!-- Логотип и кнопка мобильного меню -->
-    <div class="d-flex align-items-center w-100">
-      <!-- Кнопка меню (только на мобилке) -->
-      <button class="navbar-toggler ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <!-- Логотип (центрируется на мобилке) -->
-      <div class="logo mx-auto mx-lg-0">
+	  <div class="container-fluid">
+    <div class="row align-items-start">
+      <div class="col-md-7 order-1  mt-3 mt-md-0">
+      <div class="logo me-3">
         <img src="files/header/logo.png" alt="Moore Books">  
       </div>
-      
-      <!-- Невидимая кнопка для баланса на десктопе -->
-      <button class="navbar-toggler d-lg-none invisible" type="button">
+      </div>
+        <div class="col-md-7 order-2  mt-3 mt-md-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
+    </div>
+	  </div>
 
     <!-- Основное меню -->
     <div class="collapse navbar-collapse" id="navbarNav">
