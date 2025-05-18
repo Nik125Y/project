@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link /*active*/" href="/index.html" style="color: black;">Главная</a>
+          <a class="nav-link" href="index.html" style="color: black;">Главная</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="catalog.html">Каталог</a>
@@ -81,6 +81,14 @@
           <input type="text" class="form-control" id="register-name" required>
         </div>
         <div class="mb-3">
+          <label for="register-surname" class="form-label">Фамилия</label>
+          <input type="text" class="form-control" id="register-surname" required>
+        </div>
+        <div class="mb-3">
+          <label for="register-date" class="form-label">Дата рождения</label>
+          <input type="date" class="form-control" id="register-date" required>
+        </div>
+        <div class="mb-3">
           <label for="register-email" class="form-label">Email</label>
           <input type="email" class="form-control" id="register-email" required>
         </div>
@@ -91,6 +99,10 @@
         <div class="mb-3">
           <label for="register-password2" class="form-label">Подтвердите пароль</label>
           <input type="password" class="form-control" id="register-password2" required>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="register-consent" required>
+          <label class="form-check-label" for="register-consent">Я согласен на обработку персональных данных</label>
         </div>
         <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
       </form>

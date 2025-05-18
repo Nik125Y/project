@@ -2,7 +2,41 @@ $(document).ready(function() {
   // Загрузка корзины при открытии страницы
   loadCart();
   updateCartTotal();
+  updateBalanceDisplay();
 });
+
+function updateBalanceDisplay() {
+  const balance = parseInt(localStorage.getItem('userBalance')) || 0;
+  $('#user-balance').text(balance.toLocaleString() + ' ₽');
+  updateBalanceAfterPurchase();
+}
+
+function updateBalanceAfterPurchase() {
+  const balance = parseInt(localStorage.getItem('userBalance')) || 0;
+  const total = getTotalPrice();
+  const remaining = balance - total;
+  $('#balance-after-purchase').text(remaining.toLocaleString() + ' ₽');
+  
+  // Изменяем цвет текста в зависимости от остатка
+  if (remaining < 0) {
+    $('#balance-after-purchase').removeClass('text-success').addClass('text-danger');
+  } else {
+    $('#balance-after-purchase').removeClass('text-danger').addClass('text-success');
+  }
+}
+
+function getTotalPrice() {
+  let total = 0;
+  $('.item-checkbox:checked').each(function() {
+    const index = $(this).data('index');
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const item = cart[index];
+    if (item) {
+      total += parseInt(item.price) * (item.quantity || 1);
+    }
+  });
+  return total;
+}
 
 function loadCart() {
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -70,9 +104,11 @@ function loadCart() {
     });
     localStorage.setItem('selectedItems', JSON.stringify(selectedIndexes));
     updateTotalPrice();
+    updateBalanceAfterPurchase();
   });
 
   updateTotalPrice();
+  updateBalanceAfterPurchase();
 }
 
 function updateQuantity(index, change) {
@@ -109,8 +145,9 @@ function updateTotalPrice() {
       total += parseInt(item.price) * (item.quantity || 1);
     }
   });
-  $('#cart-total-price').text(total + ' ₽');
+  $('#cart-total-price').text(total.toLocaleString() + ' ₽');
   updateCartTotal();
+  updateBalanceAfterPurchase();
 }
 
 function updateCartTotal() {
@@ -123,7 +160,7 @@ function updateCartTotal() {
       total += parseInt(item.price) * (item.quantity || 1);
     }
   });
-  $('#cart-total').text(total + ' ₽');
+  $('#cart-total').text(total.toLocaleString() + ' ₽');
 }
 
 // Обработчик кнопки оформления заказа
@@ -143,6 +180,34 @@ $('#checkout-btn').click(function() {
   if (selectedItems.length === 0) {
     return;
   }
+
+  const total = getTotalPrice();
+  const balance = parseInt(localStorage.getItem('userBalance')) || 0;
+
+  if (balance < total) {
+    alert('Недостаточно средств. Пожалуйста, пополните баланс.');
+    window.location.href = 'profile.html';
+    return;
+  }
+  
+  // Создаем новый заказ
+  const newOrder = {
+    date: new Date().toISOString(),
+    status: 'current',
+    items: selectedItems.map(item => ({
+      ...item,
+      quantity: item.quantity || 1
+    }))
+  };
+
+  // Сохраняем заказ в историю
+  const orders = JSON.parse(localStorage.getItem('userOrders')) || [];
+  orders.unshift(newOrder); // Добавляем новый заказ в начало массива
+  localStorage.setItem('userOrders', JSON.stringify(orders));
+  
+  // Обновляем баланс
+  const newBalance = balance - total;
+  localStorage.setItem('userBalance', newBalance);
   
   // Удаляем только выбранные товары
   const remainingItems = cart.filter((item, index) => 
@@ -152,4 +217,7 @@ $('#checkout-btn').click(function() {
   localStorage.setItem('cart', JSON.stringify(remainingItems));
   localStorage.setItem('selectedItems', JSON.stringify([]));
   loadCart();
+  updateBalanceDisplay();
+  alert('Заказ успешно оформлен!');
+  window.location.href = 'profile.html?section=orders'; // Перенаправляем на страницу заказов
 }); 
