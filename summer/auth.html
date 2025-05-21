@@ -66,8 +66,8 @@
       <h2 id="auth-title" class="mb-4 text-center">Вход</h2>
       <form id="login-form">
         <div class="mb-3">
-          <label for="login-email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="login-email" required>
+          <label for="login-email" class="form-label">Логин</label>
+          <input type="text" class="form-control" id="login-email" required>
         </div>
         <div class="mb-3">
           <label for="login-password" class="form-label">Пароль</label>
@@ -89,8 +89,21 @@
           <input type="date" class="form-control" id="register-date" required>
         </div>
         <div class="mb-3">
+          <label class="form-label">Пол</label>
+          <select class="form-select" id="register-gender" required>
+            <option value="">Выберите пол</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+        <div class="mb-3">
           <label for="register-email" class="form-label">Email</label>
           <input type="email" class="form-control" id="register-email" required>
+        </div>
+        <div class="mb-3">
+          <label for="register-login" class="form-label">Логин</label>
+          <input type="text" class="form-control" id="register-login" required>
         </div>
         <div class="mb-3">
           <label for="register-password" class="form-label">Пароль</label>
@@ -99,10 +112,6 @@
         <div class="mb-3">
           <label for="register-password2" class="form-label">Подтвердите пароль</label>
           <input type="password" class="form-control" id="register-password2" required>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="register-consent" required>
-          <label class="form-check-label" for="register-consent">Я согласен на обработку персональных данных</label>
         </div>
         <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
       </form>
